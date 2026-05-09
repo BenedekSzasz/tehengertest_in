@@ -28,3 +28,57 @@ test('A p elem tartalma', async ({ page }) => {
     const text = page.locator('p')
     await expect(text).toContainText('Henger térfogatának számítása az alap sugarából és a henger magasságából.')
 })
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
+
+test('input 30, 35 output:98960.16858807848', async ({ page }) => {
+    await page.goto(url)
+    await page.locator('#radius').fill('30')
+    await page.locator('#height').fill('35')
+    await page.locator('#calcButton').click()
+    const volume = page.locator('#volume')
+    await expect(volume).toHaveValue('98960.16858807848')
+})
